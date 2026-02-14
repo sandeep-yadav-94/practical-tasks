@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+
+
+header {
+    background: #222;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #444;
+    transform: scale(1.05);
+}
+
+
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-card {
+    background: white;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-card h4 {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0077b5;
+}
+
+
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.product-card {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-card button:hover {
+    background: #444;
+}
+
+
+
+@media (max-width: 600px) {
+    .links-container,
+    .profile-container,
+    .product-container {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .profile-card,
+    .product-card {
+        width: 90%;
+    }
+}
